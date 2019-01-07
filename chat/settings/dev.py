@@ -1,4 +1,5 @@
 from .settings import *
+import sys
 import os
 
 DEBUG=True
@@ -10,6 +11,11 @@ DATABASES = {
         'USER': os.environ.get('DB_USER'),
         'PASSWORD': os.environ.get('DB_PASSWORD'),
         'HOST': 'localhost',
+        'TEST':{
+            'NAME':'unit_test_db',
+            'USER': os.environ.get('DB_USER'),
+            'PASSWORD': os.environ.get('DB_PASSWORD'),
+        }
     },
 }
 
@@ -23,3 +29,5 @@ CHANNEL_LAYERS = {
         },
     },
 }
+
+

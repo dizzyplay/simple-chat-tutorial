@@ -2,3 +2,4 @@ db_user.sh
 .idea/
 *.pyc
 */__pycache__/*
+chromedriver
